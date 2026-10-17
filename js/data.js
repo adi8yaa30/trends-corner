@@ -4,12 +4,13 @@
    Set a number (e.g. 1299) to show a real price.
    ========================================================= */
 
-/* Contact placeholders — replace before launch.
-   The footer links in every HTML file are synced from these on load. */
+/* Contact details. The footer links in every HTML file are synced from these on load.
+   whatsappNumber and email are still placeholders — replace before launch. */
 const CONTACT = {
   whatsappNumber: '91XXXXXXXXXX',            // country code + number, digits only
-  instagram:      'https://instagram.com/',
+  instagram:      'https://www.instagram.com/trendcorner_mes/',
   email:          'hello@trendcorner.in',
+  maps:           'https://www.google.com/maps/place/TREND+CORNER/@27.6363933,94.7112942,17z/data=!4m6!3m5!1s0x3740ed8d0293919b:0x9f9eab0425245c39!8m2!3d27.6363933!4d94.7112942!16s%2Fg%2F11y7kydn2f',
 };
 
 const PRODUCTS = [

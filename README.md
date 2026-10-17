@@ -41,8 +41,7 @@ This uses an inline SVG `<mask>` instead of CSS `mask-image: url(...)` because C
 - **Accessory names:** the design only says "T-SHIRT NAME". The four names in `ACCESSORIES` are placeholders.
 - **Accessory and pants copy:** the taglines, descriptions and specs for pants and accessories were written to fill the layout. Only the Heaven Calls tee copy comes from the design.
 - **Sizes:** all "Available Sizes" values are placeholders.
-- **Contact details:** `CONTACT` at the top of `js/data.js` holds the WhatsApp number (`91XXXXXXXXXX`), Instagram URL and email. The footer links and BUY NOW use these. The HTML `href`s are fallbacks with the same placeholders.
-- **Footer white box:** `<div class="footer-slot">` is an empty placeholder for a store map embed or a QR code.
+- **Contact details:** `CONTACT` at the top of `js/data.js` holds the WhatsApp number (`91XXXXXXXXXX`) and email, which are still placeholders, plus the real Instagram (`@trendcorner_mes`) and Google Maps links. The footer links and BUY NOW use these. The HTML `href`s are fallbacks with the same placeholders.
 - **About page copy:** placeholder paragraphs in `about.html`.
 - **Cart:** ADD TO CART only saves to `localStorage` (`tc_cart`) and updates the `CART (n)` count. There's no cart page or checkout yet.
 

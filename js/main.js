@@ -39,6 +39,7 @@
       instagram: CONTACT.instagram,
       whatsapp: whatsappLink(),
       email: 'mailto:' + CONTACT.email,
+      maps: CONTACT.maps,
     };
     document.querySelectorAll('[data-contact]').forEach(function (a) {
       const href = hrefs[a.dataset.contact];
