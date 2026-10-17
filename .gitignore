@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+__MACOSX/
+
+# Figma design exports: reference only, never used by the site (~86 MB)
+assets/*-figma-design-image.png
+
+# Local editor / preview config
+.claude/

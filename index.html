@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trend Corner — Streetwear from Silapathar, Assam</title>
+  <meta name="description" content="Trend Corner: oversized graphic tees, cargo pants and accessories. Streetwear essentials from Silapathar, Assam.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Trend Corner — home" width="64" height="64"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">MENU</button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list nav-list--left">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        </ul>
+        <ul class="nav-list nav-list--right">
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="about.html">About Us</a></li>
+        </ul>
+        <!-- TODO: turn into a link once a cart page exists. -->
+        <span class="nav-cart">Cart (<span data-cart-count>0</span>)</span>
+      </div>
+    </nav>
+    <hr class="rule">
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-top">
+        <h1 class="hero-title display" id="hero-title">Wear it loud.</h1>
+        <p class="hero-sub">Oversized fits. Statement graphics. Everyday essentials for those who dress differently.</p>
+      </div>
+
+      <div class="hero-stage">
+      <div class="hero-media">
+        <img src="assets/hero-image.png" alt="Trend Corner pieces on a clothes rack: four graphic tees, khaki cargo pants and washed black baggy jeans, with a cap, green high-top sneakers and a flight case" width="1672" height="941" fetchpriority="high">
+        <!-- Garment hotspots: each <a> links to its product page. On hover/focus its polygon
+             fades in a red gradient, masked by the photo's alpha so only the garment is tinted. -->
+        <svg class="hero-hotspots" viewBox="0 0 1672 941" preserveAspectRatio="none" role="group" aria-label="Shop the rack">
+          <defs>
+            <mask id="hero-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="1672" height="941" style="mask-type:alpha">
+              <image href="assets/hero-image.png" x="0" y="0" width="1672" height="941"/>
+            </mask>
+            <linearGradient id="hero-tint" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#CD3A36" stop-opacity="0.88"/>
+              <stop offset="0.2" stop-color="#CD3A36" stop-opacity="0.8"/>
+              <stop offset="1" stop-color="#CD3A36" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <a class="hero-garment" href="product.html?id=distressed-star-tee" aria-label="View Distressed Star Graphic Tee">
+            <polygon points="395,98 420,98 468,165 550,195 552,660 242,658 240,440 168,408 190,360 214,320 230,240 238,205 345,165" fill="url(#hero-tint)" mask="url(#hero-mask)"/>
+          </a>
+          <a class="hero-garment" href="product.html?id=dark-gothic-tee" aria-label="View Dark Gothic Graphic Tee">
+            <polygon points="660,98 685,98 720,155 790,178 802,232 822,262 842,290 866,325 882,380 888,418 818,440 816,642 548,642 548,190 640,158" fill="url(#hero-tint)" mask="url(#hero-mask)"/>
+          </a>
+          <a class="hero-garment" href="product.html?id=desert-khaki-cargo" aria-label="View Desert Khaki Cargo Pants">
+            <polygon points="925,98 948,98 948,124 1048,124 1046,175 1040,230 1056,290 1068,380 1080,440 1086,560 1092,710 1100,800 1100,842 740,842 738,770 752,650 815,642 818,440 885,418 870,330 842,290 822,262 800,232 806,175 828,124 925,124" fill="url(#hero-tint)" mask="url(#hero-mask)"/>
+          </a>
+          <a class="hero-garment" href="product.html?id=midnight-baggy-jeans" aria-label="View Midnight Washed Baggy Jeans">
+            <polygon points="1180,98 1200,98 1200,124 1290,124 1322,150 1320,212 1268,240 1212,440 1285,455 1290,708 1342,710 1346,850 1282,868 1188,868 1150,864 1100,860 1100,800 1092,710 1086,560 1080,440 1068,380 1056,290 1040,230 1046,175 1060,124 1180,124" fill="url(#hero-tint)" mask="url(#hero-mask)"/>
+          </a>
+          <a class="hero-garment" href="product.html?id=heaven-calls-tee" aria-label="View Heaven Calls Graphic Tee">
+            <polygon points="1398,120 1414,120 1420,150 1440,195 1500,215 1575,250 1640,450 1565,470 1562,708 1290,708 1285,455 1212,440 1240,280 1268,240 1346,205 1385,160" fill="url(#hero-tint)" mask="url(#hero-mask)"/>
+          </a>
+        </svg>
+      </div>
+      </div>
+
+      <div class="hero-bottom">
+        <p class="hero-tagline">Your style. No rules.</p>
+        <a class="btn" href="#collection">Shop collection</a>
+      </div>
+    </section>
+
+    <section class="section container" id="collection" aria-labelledby="collection-title">
+      <h2 class="section-title reveal" id="collection-title">Our Collection</h2>
+      <div class="grid reveal" data-grid="products"></div>
+      <div class="section-cta"><a class="btn" href="products.html">View collection</a></div>
+    </section>
+
+    <section class="banner" aria-label="Model wearing the Heaven Calls tee and washed black baggy jeans">
+      <p class="banner-text banner-text--left">Your fit.</p>
+      <p class="banner-text banner-text--right">Your rules.</p>
+    </section>
+
+    <section class="section container" aria-labelledby="accessories-title">
+      <h2 class="section-title reveal" id="accessories-title">Accessories</h2>
+      <div class="grid grid--4 reveal" data-grid="accessories"></div>
+      <div class="section-cta"><a class="btn" href="accessories.html">View collection</a></div>
+    </section>
+
+    <section class="closer container" aria-labelledby="closer-title">
+      <h2 class="closer-title display reveal" id="closer-title">Not here to fit in.</h2>
+      <p class="closer-sub">Streetwear essentials from Silapathar, Assam.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-logo" href="index.html"><img src="assets/logo.png" alt="Trend Corner" width="200" height="200" loading="lazy"></a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Shop Collection</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+      </ul>
+      <!-- Contact hrefs are placeholders; the real values live in CONTACT in js/data.js and are synced on load. -->
+      <ul class="footer-links">
+        <li><a href="https://instagram.com/" data-contact="instagram" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/91XXXXXXXXXX" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:hello@trendcorner.in" data-contact="email">Email</a></li>
+      </ul>
+      <!-- PLACEHOLDER: empty white box from the design. Intended for a store map embed or a QR code. -->
+      <div class="footer-slot" aria-hidden="true"></div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Trend Corner. Silapathar, Assam.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

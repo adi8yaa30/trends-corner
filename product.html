@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heaven Calls Graphic Tee — Trend Corner</title>
+  <meta name="description" content="Heaven Calls Graphic Tee from Trend Corner, streetwear from Silapathar, Assam.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Trend Corner — home" width="64" height="64"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">MENU</button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list nav-list--left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        </ul>
+        <ul class="nav-list nav-list--right">
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="about.html">About Us</a></li>
+        </ul>
+        <!-- TODO: turn into a link once a cart page exists. -->
+        <span class="nav-cart">Cart (<span data-cart-count>0</span>)</span>
+      </div>
+    </nav>
+    <hr class="rule">
+  </header>
+
+  <main>
+    <section class="pdp-section" data-product-page aria-labelledby="pdp-title">
+      <div class="pdp">
+        <h1 class="pdp-title" id="pdp-title" data-p="title">Heaven Calls Graphic Tee</h1>
+        <p class="pdp-tagline" data-p="tagline">Faith never fades.<br>Style never follows.</p>
+
+        <div class="pdp-about">
+          <h2 class="pdp-label" data-p="about-label">About the Tee</h2>
+          <p class="pdp-desc" data-p="about">Not your everyday graphic tee. Featuring a bold gothic-inspired print, washed-black finish and relaxed silhouette, the Heaven Calls Tee brings an edge to your everyday rotation. Made to stand out. Styled your way.</p>
+        </div>
+
+        <p class="pdp-price" data-p="price">&#8377; X,XXX</p>
+
+        <div class="pdp-image">
+          <img data-p="img" src="assets/products/1.png" alt="Heaven Calls Graphic Tee" width="1254" height="1254" loading="lazy">
+        </div>
+
+        <div class="pdp-specs">
+          <h2 class="pdp-label" data-p="specs-label">Tee Specs</h2>
+          <ul data-p="specs">
+            <li>Colour: Washed Black</li>
+            <li>Fit: Relaxed / Oversized Style</li>
+            <li>Neckline: Crew Neck</li>
+            <li>Sleeves: Short Sleeves</li>
+            <li>Design: Gothic Front Graphic</li>
+            <li>Style: Streetwear / Casual</li>
+            <li>Available Sizes: S, M, L, XL (placeholder)</li>
+          </ul>
+        </div>
+
+        <div class="pdp-actions btn-row">
+          <button type="button" class="btn btn-lg" data-action="buy" data-id="heaven-calls-tee">Buy now</button>
+          <button type="button" class="btn btn-lg" data-action="cart" data-id="heaven-calls-tee">Add to cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="similar-title">
+      <h2 class="section-title reveal" id="similar-title" data-p="similar-title">Similar Tees</h2>
+      <div class="grid reveal" data-p="similar"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-logo" href="index.html"><img src="assets/logo.png" alt="Trend Corner" width="200" height="200" loading="lazy"></a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Shop Collection</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+      </ul>
+      <!-- Contact hrefs are placeholders; the real values live in CONTACT in js/data.js and are synced on load. -->
+      <ul class="footer-links">
+        <li><a href="https://instagram.com/" data-contact="instagram" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/91XXXXXXXXXX" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:hello@trendcorner.in" data-contact="email">Email</a></li>
+      </ul>
+      <!-- PLACEHOLDER: empty white box from the design. Intended for a store map embed or a QR code. -->
+      <div class="footer-slot" aria-hidden="true"></div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Trend Corner. Silapathar, Assam.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

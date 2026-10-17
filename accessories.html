@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessories — Trend Corner</title>
+  <meta name="description" content="Trend Corner accessories: chains and hardware to finish the fit.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Trend Corner — home" width="64" height="64"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">MENU</button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list nav-list--left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        </ul>
+        <ul class="nav-list nav-list--right">
+        <li><a href="accessories.html" aria-current="page">Accessories</a></li>
+        <li><a href="about.html">About Us</a></li>
+        </ul>
+        <!-- TODO: turn into a link once a cart page exists. -->
+        <span class="nav-cart">Cart (<span data-cart-count>0</span>)</span>
+      </div>
+    </nav>
+    <hr class="rule">
+  </header>
+
+  <main>
+    <section class="section container" aria-labelledby="page-title">
+      <div class="page-head">
+        <h1 class="page-title display reveal" id="page-title">Accessories</h1>
+      </div>
+      <div class="grid grid--4 reveal" data-grid="accessories" style="margin-top: clamp(32px, 4vw, 56px)"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-logo" href="index.html"><img src="assets/logo.png" alt="Trend Corner" width="200" height="200" loading="lazy"></a>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Shop Collection</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+      </ul>
+      <!-- Contact hrefs are placeholders; the real values live in CONTACT in js/data.js and are synced on load. -->
+      <ul class="footer-links">
+        <li><a href="https://instagram.com/" data-contact="instagram" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/91XXXXXXXXXX" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:hello@trendcorner.in" data-contact="email">Email</a></li>
+      </ul>
+      <!-- PLACEHOLDER: empty white box from the design. Intended for a store map embed or a QR code. -->
+      <div class="footer-slot" aria-hidden="true"></div>
+    </div>
+    <p class="footer-copy">&copy; 2026 Trend Corner. Silapathar, Assam.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
